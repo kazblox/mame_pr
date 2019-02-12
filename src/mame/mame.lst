@@ -9994,8 +9994,8 @@ cocoh                           // Color Computer with HD6309 CPU
 coco2h                          // Color Computer 2 with HD6309 CPU
 coco2bh                         // Color Computer 2B (uses M6847T1 video chip) with HD6309 CPU
 cocoeh                          // Color Computer (Extended BASIC 1.0) with HD6309 CPU
-cp400                           // ProlÃ³gica CP400
-cp400c2                         // ProlÃ³gica CP400 Color II
+cp400                           // Prológica CP400
+cp400c2                         // Prológica CP400 Color II
 lzcolor64                       // Novo Tempo / LZ Equipamentos Color64
 mx1600                          // Dynacom MX-1600
 cd6809                          // Codimex CD-6809
@@ -13416,6 +13416,7 @@ explorer                        // bootleg
 fantastc                        // (c) Taito (Brazil) - rewrite of Galaga
 fantazia                        // bootleg
 frogf                           // bootleg
+frogf2                          // bootleg
 frogg                           // bootleg
 frogger                         // GX392 (c) 1981 Konami
 froggeram                       // bootleg

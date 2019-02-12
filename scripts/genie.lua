@@ -1417,7 +1417,30 @@ configuration { "winphone8* or winstore8*" }
 	linkoptions {
 		"/ignore:4264" -- LNK4264: archiving object file compiled with /ZW into a static library; note that when authoring Windows Runtime types it is not recommended to link with a static library that contains Windows Runtime metadata
 	}
-configuration { "llvm" }
+-- clang-cl only supports unix-style warning codes.
+configuration { "vsllvm" }
+		defines {
+			"XML_STATIC",
+			"WIN32",
+			"_WIN32",
+			"_CRT_NONSTDC_NO_DEPRECATE",
+			"_CRT_SECURE_NO_DEPRECATE",
+			"_CRT_STDIO_LEGACY_WIDE_SPECIFIERS",
+		}
+
+		links {
+			"user32",
+			"winmm",
+			"advapi32",
+			"shlwapi",
+			"wsock32",
+			"ws2_32",
+			"psapi",
+			"iphlpapi",
+			"shell32",
+			"userenv",
+		}
+
 		buildoptions {
 			"-Wno-tautological-constant-out-of-range-compare",
 			"-Wno-ignored-qualifiers",
@@ -1439,6 +1462,10 @@ configuration { "llvm" }
 			"-Wno-new-returns-null",
 			"-Wno-switch",
 			"-Wno-tautological-undefined-compare",
+		}
+
+		includedirs {
+			MAME_DIR .. "3rdparty/dxsdk/Include"
 		}
 
 

@@ -210,6 +210,7 @@ public:
 	void init_sidam();
 	void init_explorer();
 	void init_amigo2();
+	void init_frogf2();
 	void init_mandinga();
 	void init_sfx();
 	void init_atlantis();
@@ -252,6 +253,7 @@ public:
 	void null_draw_background(bitmap_rgb32 &bitmap, const rectangle &cliprect);
 	void galaxian_draw_background(bitmap_rgb32 &bitmap, const rectangle &cliprect);
 	void background_draw_colorsplit(bitmap_rgb32 &bitmap, const rectangle &cliprect, rgb_t color, int split, int split_flipped);
+	// int flip_and_clip(rectangle &draw, int xstart, int xend, const rectangle &cliprect);
 	void scramble_draw_stars(bitmap_rgb32 &bitmap, const rectangle &cliprect, int maxx);
 	void scramble_draw_background(bitmap_rgb32 &bitmap, const rectangle &cliprect);
 	void anteater_draw_background(bitmap_rgb32 &bitmap, const rectangle &cliprect);
@@ -339,6 +341,7 @@ public:
 	void scorpion(machine_config &config);
 	void frogf(machine_config &config);
 	void amigo2(machine_config &config);
+	void frogf2(machine_config &config);
 	void zigzag(machine_config &config);
 	void checkman(machine_config &config);
 	void jungsub(machine_config &config);
@@ -354,6 +357,7 @@ public:
 
 protected:
 	void amigo2_map(address_map &map);
+	void frogf2_map(address_map &map);
 	void anteaterg_map(address_map &map);
 	void anteatergg_map(address_map &map);
 	void anteateruk_map(address_map &map);
